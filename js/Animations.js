@@ -30,26 +30,31 @@ hoverButton.onmouseleave = () => {
 document.getElementById("hover-btn-id").append(hoverButton);
 
 //Increment Button
-let numberParagraph = document.createElement("p");
-let ctr = 0;
-numberParagraph.innerText = `Number : ${ctr}`;
- 
-let incrementButton = document.createElement("button");
- 
-incrementButton.innerHTML = "Click me to add!";
-incrementButton.id = "btn-counter";
- 
-incrementButton.onclick = () => {
-     
-    numberParagraph.classList.remove(...numberParagraph.classList);
-    if (ctr++ % 2 == 0) {
-        numberParagraph.classList.add('even');
+
+let count = 1;
+
+document.getElementById('btn-counter').onclick = () => {
+    count += 1;
+
+    document.getElementById('txt-counter').textContent = `Number: ${count}`;
+
+    document.getElementById('txt-counter').classList.remove('even', 'odd');
+
+
+    if (count % 2 === 0) {
+        document.getElementById('txt-counter').classList.add('even');
     } else {
-        numberParagraph.classList.add('odd');
+        document.getElementById('txt-counter').classList.add('odd');
     }
-    numberParagraph.innerText = `Number : ${ctr}`;
- 
-    ``
+};
+
+//for Loops
+for (let i = 1; i <= 100; i++) {
+  
+    const listItem = document.createElement('li');
+
+    listItem.textContent = i % 2 === 0 ? 'Even' : 'Odd';
+
+
+    document.getElementById('numbers').appendChild(listItem);
 }
-document.getElementById("btn-counter").append(incrementButton);
-document.getElementById("txt-counter").append(numberParagraph);
