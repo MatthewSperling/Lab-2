@@ -1,15 +1,17 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #e6e6fa;
 }
 
-/* This is the style page for the sparrow website */
-
+/* Styles for headings using Montserrat */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Georgia', serif;
+    font-family: 'Montserrat', serif;
     color: #5f9ea0;
 }
 
@@ -25,13 +27,35 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 figure {
     margin: 10px 0;
 }
+
 figcaption {
     font-style: italic;
-    text-align: center;
-    color: #483d8b;
+}
+
+/* Mobile-first styles */
+.container {
+    width: 100%;
+    padding: 0 15px;
+}
+
+/* Media query for tablets */
+@media (min-width: 600px) {
+    .container {
+        width: 85%;
+        padding: 0 30px;
+    }
+}
+
+/* Media query for desktops */
+@media (min-width: 1000px) {
+    .container {
+        width: 70%;
+        margin: 0 auto; 
+    }
 }
 
 a {
