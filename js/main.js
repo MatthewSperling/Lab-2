@@ -6,7 +6,7 @@ document.getElementById("year").textContent = year.getFullYear();
 
 //alert button
 let alertButton = document.createElement('button');
-alertButton.innerHTML = 'Click ME!!!';
+alertButton.innerHTML = 'Click Me!';
 alertButton.id = 'btn-alert';
 alertButton.onclick = () => {
     alert('Nice Click!!');
@@ -20,7 +20,7 @@ hoverButton.innerHTML = "Hover Over Me :) ";
 hoverButton.id = 'hover-btn-id';
  
 hoverButton.onmouseover = () => {
-    hoverButton.innerText = 'HEY!!';
+    hoverButton.innerText = 'Hey!';
 }
 hoverButton.onmouseleave = () => {
     hoverButton.innerText = 'Do it Again!';
@@ -31,7 +31,7 @@ document.getElementById("hover-btn-id").append(hoverButton);
 
 //Increment Button
 
-let count = 1;
+let count = 0;
 
 document.getElementById('btn-counter').onclick = () => {
     count += 1;
