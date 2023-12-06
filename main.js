@@ -24,7 +24,7 @@ hoverButton.onmouseover = () => {
 }
 hoverButton.onmouseleave = () => {
     hoverButton.innerText = 'Do it Again!';
-    setTimeout(()=>{hoverButton.innerText = "Put your cursor on me!";},3000)
+    setTimeout(()=>{hoverButton.innerText = "Good Work!";},3000)
 }
  
 document.getElementById("hover-btn-id").append(hoverButton);
