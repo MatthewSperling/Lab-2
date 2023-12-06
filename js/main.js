@@ -9,7 +9,7 @@ let alertButton = document.createElement('button');
 alertButton.innerHTML = 'Click ME!!!';
 alertButton.id = 'btn-alert';
 alertButton.onclick = () => {
-    alert('Nice Ckick!!');
+    alert('Nice Click!!');
 }
 
 document.getElementById("btn-alert").append(alertButton);
