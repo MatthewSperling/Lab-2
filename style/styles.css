@@ -9,13 +9,14 @@ body {
     background-color: #e6e6fa;
 }
 
-/* Styles for headings using Montserrat */
+/* Styles for headings using Montserrat a Google font */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', serif;
     color: #5f9ea0;
 }
+
 .intro {
-    border: 3pt solid royalblue; /* Royal blue border */
+    border: 3pt solid royalblue; 
     border-radius: 10px;
 }
 
@@ -70,7 +71,7 @@ a {
 a:hover {
     color: #000080;
 }
-
+/* Drummer Table Section */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -124,12 +125,13 @@ section {
     background: #f8f8ff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+/* Couter button */
 #btn-alert {
     cursor: grab;
     text-decoration: wavy;
     color: rgb(9, 9, 14);
 }
-
+/* Couter output Color */
 .even {
   color: rgb(128, 0, 70);
 }
@@ -137,7 +139,7 @@ section {
 .odd {
   color: rgb(64, 20, 177);
 }
-/* Media query for screens larger than phone screens with a different background color */
+/* Media query for screens larger than phone screens*/
 @media (min-width: 600px) {
     body {
         background-color: #f0f8ff;
