@@ -15,6 +15,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #5f9ea0;
 }
 
+/*Bigraphy section */
 #biography {
     background-color: #9370db;
     color: #ffffff;
@@ -81,6 +82,7 @@ caption {
     margin-bottom: 10px;
     color: #6a5acd;
 }
+/*Navigation Section */
 
 nav {
     background: #4169e1;
@@ -130,4 +132,13 @@ section {
 
 .odd {
   color: rgb(64, 20, 177);
+}
+* {
+    border: 1px solid blue;
+}
+* Media query for screens larger than phone screens */
+@media (min-width: 600px) {
+    body {
+        background-color: #f0f8ff; /* A different background color for larger screens */
+    }
 }
