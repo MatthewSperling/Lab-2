@@ -136,9 +136,9 @@ section {
 * {
     border: 1px solid blue;
 }
-* Media query for screens larger than phone screens */
+/* Media query for screens larger than phone screens with a different background color */
 @media (min-width: 600px) {
     body {
-        background-color: #f0f8ff; /* A different background color for larger screens */
+        background-color: #f0f8ff;
     }
 }
